@@ -1,0 +1,10 @@
+h1 hello from pug
+
+
+
+if name
+  h2 Welcome back #{name}
+else
+  form(action="/set-name", method="post")
+    input(type="text" placeholder="your name" name="name")
+    input(type="submit")
